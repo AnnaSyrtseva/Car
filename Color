@@ -1,0 +1,17 @@
+public class Color {
+    String colorName;
+    String brand;
+
+    public Color(String colorName, String brand) {
+        this.colorName = colorName;
+        this.brand = brand;
+    }
+
+    @Override
+    public String toString() {
+        return "Color{" +
+                "colorName='" + colorName + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
+    }
+}
