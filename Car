@@ -4,6 +4,11 @@ public class Car {
     Color color;
     Speed speed;
 
+    int currentSpeed;
+    int y;
+
+
+
     public Car(Model model, Color color, Speed speed) {
         this.model = model;
         this.color = color;
@@ -20,11 +25,14 @@ public class Car {
     }
 
     int accelerate(int s) {
-        return s + 5;
+        currentSpeed = s+5;
+        return currentSpeed;
 
     }
 
     int slowDown(int i) {
-        return i - 5;
+        y = i -5; 
+        return y;
+
     }
 }
