@@ -1,0 +1,30 @@
+public class Car {
+
+    Model model;
+    Color color;
+    Speed speed;
+
+    public Car(Model model, Color color, Speed speed) {
+        this.model = model;
+        this.color = color;
+        this.speed = speed;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model=" + model +
+                ", color=" + color +
+                ", speed=" + speed +
+                '}';
+    }
+
+    int accelerate(int s) {
+        return s + 5;
+
+    }
+
+    int slowDown(int i) {
+        return i - 5;
+    }
+}
